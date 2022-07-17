@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios HTML</title>
+    <link rel="stylesheet" href="cssIndex.css">
+</head>
+<body>
+    <header>Exercicios HTML</header>
+    <nav>
+        <a href="Exercicios/texto1.html"> 01 - Texto1</a> |
+        <a href="Exercicios/texto2.html"> 02 - Texto2</a>
+        <a href="Exercicios/listas.html"> 03 - Listas</a>
+        <a href="Exercicios/listaAninhada.html"> 04 - Lista Aninhada que abre e fecha</a>
+        <a href="Exercicios/links.html"> 05 - Links</a>
+        <a href="Exercicios/tabela.html"> 06 - Tabela</a>
+        <a href="Exercicios/formulario.html"> 07 - Formulario</a>
+        <a href="Exercicios/imagens.html"> 08 - Imagens</a>
+
+    </nav>
+    <section id="conteudo"></section>
+    <footer>
+        
+        <h2> Curso HTML </h2>
+    </footer>
+    <script>
+        document.querySelectorAll('a').forEach(link =>{
+            const conteudo = document.getElementById('conteudo')
+
+            link.onclick = function(e) {
+                e.preventDefault()
+                fetch(link.href)
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+            }
+        })
+    </script>
+
+    
+</body>
+</html>

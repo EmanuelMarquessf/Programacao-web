@@ -1,0 +1,28 @@
+
+h1{
+    display: inline;
+    font-size: 100px;
+    background-color: rgb(28, 73, 73);
+}
+.fundoVermelho{
+    background-color: red;
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+#textoPrincipal{
+    font-size: 40px;
+    font-weight: bold;
+    color: aqua;
+    padding: 200px;
+    background-color:brown;
+    text-decoration:dotted;
+    text-transform:inherit;
+   
+}
+
+#bla{
+    display: none;
+}   
