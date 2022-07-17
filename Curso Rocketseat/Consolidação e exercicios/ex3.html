@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            Crie uma função que receba uma string em celsius ou fahrenheit
+            e faça a transformação de uma unidade para outra 
+                C = (F - 32) * 5/9 
+                F = C * 9/5 + 32
+        */
+
+        let temperature = prompt("Temperatura em C ou F: ").toUpperCase();
+        let result, number;
+        if(temperature.includes("C")){
+            number = temperature.replace("C", "");
+            console.log(number);
+            result = (number - 32) * 5/9;
+            console.log(temperature + " = " + result.toFixed(1))
+        }else if(temperature.includes("F")){
+            number = temperature.replace("F", "")
+            result = number * 9/5 + 32
+            console.log(temperature + " = " + result.toFixed(1))
+        }
+        else{
+            console.log("Unidade não identificada!!")
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //manipulando array
+
+        let frase = "Estudando programação na rocketseat"
+
+        //deixa todo texto em maiusculo
+        document.write("<br>" + frase.toUpperCase())
+        //deixa todo texto em minusculo
+        document.write("<br>" + frase.toLocaleLowerCase())
+        //procura palavra no texto
+        console.log(frase.includes("rocketseat"));
+        //separa frase em um array de acordo com o caracter informado
+        let myArray = frase.split(" ");
+        console.log(myArray);
+        //junta array em uma frase com um caracter escolhido 
+        let phraseArray = myArray.join("_");
+        console.log(phraseArray);
+
+        
+
+
+    </script>
+</body>
+</html>

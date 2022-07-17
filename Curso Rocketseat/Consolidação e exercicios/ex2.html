@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            Crie um objeto que possuirá 2 propriedades, ambas do tipo array:
+                * receitas: [] 
+                * despesas: []
+            Agora, crie uma função que irá calcular o total de receitas e 
+            despesas e irá mostrar uma mensagem se a família está com 
+            saldo positivo ou negativo, seguido do valor do saldo.
+        */
+
+        let family = {
+           incomes: [30, 45, 100, 250],
+           expenses:[10, 15, 50, 35],
+        }
+        let income = 0;
+        let expense = 0;
+        for (let i = 0; i < family.incomes.length; i++) {
+            income += family.incomes[i]; 
+        }
+        for (let i = 0; i < family.expenses.length; i++) {
+            expense += family.expenses[i]; 
+        }
+
+        console.log("Incomes: R$ " + income.toFixed(2));
+        console.log("Expense: R$ " + expense.toFixed(2));
+        console.log("Total: R$ " + (income - expense).toFixed(2));
+
+        if(income - expense < 0){
+            console.log("Total: R$ " + (income - expense).toFixed(2));
+        }
+    </script>
+</body>
+</html>
