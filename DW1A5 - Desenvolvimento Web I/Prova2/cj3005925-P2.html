@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>   
+    <script>
+        let numeroConta = parseInt(prompt("Digite o numero da conta:"));
+        let saldoConta = parseFloat(prompt("Digite o saldo da conta:"));
+        let tipoOperacao = parseInt(prompt("1 - Depósito\n2 - Retirada"));
+        let valorOperacao = parseFloat(prompt("Valor da operação:"));
+
+        if(tipoOperacao == 1){
+            saldoConta += valorOperacao;
+        }
+        else if(tipoOperacao == 2){
+            saldoConta -= valorOperacao;
+        }
+        document.write("Conta: ", numeroConta )
+        if(saldoConta >= 0){
+            document.write("<br>Saldo atual: R$ ", saldoConta.toFixed(2));
+        }
+        else{
+            document.write("<br>Saldo atual: R$ " + saldoConta.toFixed(2) + "<br>Conta Estourada");
+        }
+    </script>
+</body>
+</html>

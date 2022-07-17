@@ -1,0 +1,117 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    background-color: #ccc;
+}
+
+#tudo{
+    width: 100%;
+    max-width: 1200px;
+    min-width: 760px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+h1,h2{
+    color: #036;
+}
+
+.topo-header{
+    background-color: #036;
+    padding: 5px 20px
+}
+
+.topo-header h1{
+    font-size: 36px;
+    text-align: right;
+}
+
+.topo-header a{
+    color: white;
+    text-decoration: none;
+}
+
+.topo-header h2{
+    font-size: 20px;
+    color: white;
+    text-align: right;
+    margin: 2px 0 4px 0;
+}
+
+.principal{
+    width: 80%;
+    float: right;
+    padding-left: 15px;
+}
+
+.auxiliar{
+    width: 20%;
+    float: left;
+   padding-left: 15px;
+}
+
+.rodape{
+    background-color: #036;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+    clear: both;
+}
+
+a{
+    text-decoration: none;
+}
+
+.auxiliar-navegacao{
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.auxiliar-navegacao a{
+    background-color: #ff6e19;
+    color: white;
+    display: block;
+    margin-bottom: 1px;
+    line-height: 2;
+    text-transform: capitalize;
+}
+
+.auxiliar-navegacao a:hover{
+    background-color: #036;
+}
+
+.auxiliar-parceiros{
+    margin: 30px 0;
+    text-align: center;
+}
+
+.auxiliar-parceiros li{
+    margin-top: 3px;
+    background-color: #eee;
+}
+
+.auxiliar-parceiros a{
+    padding: 8px 0;
+    display: block;
+    padding: 8px 0;
+    color: #333;
+}
+
+.auxiliar-parceiros-imagens img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+

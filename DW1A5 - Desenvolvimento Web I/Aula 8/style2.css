@@ -1,0 +1,17 @@
+body{
+    background-color: #303841;
+}
+h1{
+    background-color: #F5F5F5; 
+    border: 10px solid  #303841;
+    padding: 100px;
+    display: block;
+
+}
+
+div{
+    width: 900px;
+    height: 900px;
+    background-color: rgba(1, 1, 1, 0.5);
+    
+}

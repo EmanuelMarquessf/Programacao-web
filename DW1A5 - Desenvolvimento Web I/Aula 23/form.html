@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        .campo{
+
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <p>
+            Nome: <input type="text" name="nome" id="nome" onblur="verificaCampo();">
+        </p>
+        <p>
+            Nome: <input type="text" name="nome" onblur="alert('O elemento perdou o foco')">
+        </p>
+    </form>
+
+    <script>
+        function verificaCampo(){
+            var nome = document.querySelector('#nome').value;
+
+            if(nome == ""){
+                //alert("O campo deve ser preenchido")
+                document.getElementById('nome').classList('campo');
+            }
+        }
+        
+    </script>
+</body>
+</html>

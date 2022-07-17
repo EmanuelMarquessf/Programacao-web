@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=svs, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var anos = parseInt(prompt("Anos: "));
+        var meses = parseInt(prompt("Meses: "));
+        var dias = parseInt(prompt("Dias: "));
+        var aux;
+
+        if(anos > 1){
+            aux = parseInt(365 * anos);
+            dias = dias + (365 * aux);
+        }
+        if(meses > 1){
+            aux = parseInt(30 * meses);
+            dias = dias + (30 * aux);
+        }
+
+        document.write("Dias:", dias);
+    
+    </script>
+</body>
+</html>

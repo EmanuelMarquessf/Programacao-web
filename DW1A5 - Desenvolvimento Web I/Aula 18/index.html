@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Calculo de volume
+            // var R, A, V;
+            
+            // R = prompt('Entre com o valor do raio');
+            // A = prompt('Entre com o valor da altura');
+
+            // V = (Math.PI * Math.pow(parseFloat(R), 2) * parseFloat(A));
+            // document.write('Volume equivale ', V.toFixed(2));
+
+
+
+
+        //Raiz quadrada
+
+            // var BASE, RESP;
+
+            // BASE =  prompt('Entre com o valor da base');
+            // RESP = Math.sqrt(parseFloat(BASE));
+
+            // document.write('A raiz quadrada de ', BASE, ' é ', RESP.toFixed(2))
+
+
+
+
+
+        //Valor aleatorio entre 0 - 1
+            // var NUMERO = Math.random();
+
+            // document.write('O valor gerado é: ', NUMERO)
+
+
+
+
+
+        //Valor aleatorio inteiro 0-5
+
+            // var NUMERO = Math.round(Math.random() * 5);
+            // document.write('O valor gerado é: ', NUMERO)
+
+        
+            // var NUMERO = Math.round(Math.random() * 4 + 1);
+            // document.write('O valor gerado eh: ',NUMERO);
+
+            //var NUMERO = Math.round(Math.random() * (max - min) + min);
+
+        var MIN, MAX;
+
+        MIN = prompt('Entre com o valor minimo: ');
+        MAX = prompt('Entre com o valor maximo: ');
+
+
+        var NUMERO =  Math.round(Math.random() * parseInt(MAX - MIN) + parseInt(MIN)) ;
+
+        document.write('O valor gerado e: ', NUMERO);
+
+    </script>
+</body>
+</html>

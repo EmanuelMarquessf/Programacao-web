@@ -1,0 +1,1 @@
+alert("Inserindo JS externo");

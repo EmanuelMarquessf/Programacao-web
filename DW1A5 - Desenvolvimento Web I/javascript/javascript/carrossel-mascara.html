@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <style>
+        body{
+            background-color: coral;
+        }
+        .carrossel{
+            width: 60%;
+            margin: 0 auto;
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="carrossel">
+        <div><img src="./images/cup-of-coffee-1280537_1920.jpg" alt=""></div>
+        <div><img src="./images/desk-593327_1920.jpg" alt=""></div>
+        <div><img src="./images/home-office-336377_1920.jpg" alt=""></div>
+        <div><img src="./images/office-594132_1920.jpg" alt=""></div>
+    </div> -->
+
+    <div class="formulario">
+        <p>
+            <label for="">
+                CPF: <input type="text" id="cpf">
+            </label>
+        </p>
+        <p>
+            <label for="">
+                Telefone: <input type="text" id="telefone">
+            </label>
+        </p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <script>
+        $('.carrossel').slick({
+            dots: true,
+            Infinity: true,
+            slideToShow: 1,
+            speed: 1000,
+            autoplay: true,
+            autoplaySpeed: 1000
+        });
+
+        $(document).ready(function(){
+            $('#cpf').mask('000.000.000-00');
+            $('#telefone').mask('(00) 0000-0000');
+        });
+        
+    </script>
+</body>
+</html>

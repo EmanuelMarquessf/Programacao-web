@@ -1,0 +1,119 @@
+*, *::before, *::after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img, iframe, object, video{
+    height: auto;
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+#container{
+    margin: 0 auto;
+    width: 90%;
+}
+
+header{
+    background-color: indianred;
+    padding: 20px;
+    margin: 0;
+}
+
+h1{
+    font-size: 2em;
+}
+
+main{
+    margin: 1.5% 0;
+}
+
+.conteudo-principal{
+    float: left;
+    width: 62%;
+}
+
+.artigo-principal{
+    margin: 4.2% 0;
+}
+
+.texto{
+    text-align: justify;
+    margin: 1% 0;
+}
+
+.artigo-ultimo-conteudo{
+    float: left;
+    margin: 2.5% 2.5% 2.5% 0;
+    width: 47%;
+}
+.artigo-ultimo-conteudo .texto{
+    margin: 1.7%;
+}
+
+aside{
+    background-color: #f0f0f0;
+    float: right;
+    padding: 1%;
+    width: 38%;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    background-color: #f9f9f9;
+    float: left;
+    margin: 4.6%;
+    outline: 1px solid #dedede;
+    text-align: center;
+    width: 40%;
+}
+
+nav a{
+    display: block;
+    padding: 7.6%;
+    text-decoration: none;
+}
+
+footer{
+    background-color: indianred;
+    clear: both;
+    font-size: 0.7em;
+    margin:  1.5% 0;
+    padding: 1.5%;
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (max-width:320px){
+    nav li{
+        float: none;
+        width: auto;
+
+    }
+}
+
+
+@media screen and (max-width:640px){
+    .conteudo-principal{
+        float: none;
+        width: auto;
+    }
+    .artigo-ultimo-conteudo{
+        float: none;
+        width: auto;
+    }
+
+    aside{
+        float: none;
+        width: auto;
+    }
+}

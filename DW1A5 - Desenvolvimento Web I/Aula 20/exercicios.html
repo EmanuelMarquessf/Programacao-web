@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Exercicio 1
+        
+        var numero = parseInt(prompt("Numero"))
+        if(numero % 2 == 0){
+            document.write("Numero PAR")
+        }else{
+            document.write("Numero IMPAR <br>")
+        }
+
+        //Exercicio 2
+
+        var ope = prompt("Operador: ");
+        var num1 = parseFloat(prompt("Valor 1:"));
+        var num2 = parseFloat(prompt("Valor 2:"));
+
+        switch(ope){
+            case "+": document.write(num1 + num2); break;
+            case "-": document.write(num1 - num2); break;
+            case "*": document.write(num1 * num2); break;
+            case "/": document.write(num1 / num2); break;
+            default: document.write("Operador Invalido"); break;
+
+        }
+
+        //Exercicio 3
+
+        var nota1 = parseFloat(prompt("Nota 1:"));
+        var nota2 = parseFloat(prompt("Nota 2:"));
+
+        if((nota1 + nota2)/2 >= 6){
+            document.write("Aluno APROVADO");
+        }
+        else if((nota1 + nota2)/2 < 6){
+            document.write("Aluno REPROVADO");
+        }
+        else{
+            document.write("Valor INVALIDO");
+        }
+
+        //Exercicio 4
+        
+        var horas = parseInt(prompt("Horas: "))
+        var sal, ext, fin;
+        if(horas <= 176){
+            sal = horas * 10;
+            document.write(sal);
+        }
+        else if(horas > 176){
+            ext = (horas - 176) * 20;
+            fin = horas * 10 + ext;
+            document.write(fin);
+        }
+        
+
+        //Exercicio 5
+
+        var num1 = parseFloat(prompt("Valor 1: "));
+        var num2 = parseFloat(prompt("Valor 2: "));
+        var num3 = parseFloat(prompt("Valor 3: "));
+
+        if(num1 > num2 && num1 > num3){
+            document.write("Maior Valor: "+ num1 + "<br>");
+            if(num2 > num3){
+                document.write("Menor Valor: "+ num3+ "<br>");
+            }
+            else{
+                document.write("Menor Valor: "+ num2+ "<br>");
+            }
+        }
+        else if(num2 > num1 && num2 > num3){
+            document.write("Maior Valor: "+ num2+ "<br>");
+            if(num1 > num3){
+                document.write("Menor Valor: "+ num3+ "<br>");
+            }
+            else{
+                document.write("Menor Valor: "+ num1+ "<br>");
+            }
+        }
+        else{
+            document.write("Maior Valor: "+ num3+ "<br>");
+            if(num1 > num2){
+                document.write("Menor Valor: "+ num2+ "<br>");
+            }
+            else{
+                document.write("Menor Valor: "+ num1+ "<br>");
+            }
+        }
+
+        document.write("Media: "+ (num1+num2+num3)/3 + "<br>");
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+body{
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(242,238,240,1) 57%, rgba(212,185,193,1) 100%);
+}
+
+input, select{
+    width: 150px;
+    position:relative;
+}

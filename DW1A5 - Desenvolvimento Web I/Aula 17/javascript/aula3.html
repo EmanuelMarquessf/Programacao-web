@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Sequencia de caracteres
+
+        //var nome = prompt("Entre com seu nome:", "Digite aqui");
+        //document.write('Oi '+ nome + ' esteja a vontade');
+
+        //Valores numéricos inteiro
+
+        //var num1 = parseInt(prompt('Digite o primeiro valor'));
+        //var num2 = parseInt(prompt('Digite o primeiro valor'));
+        //var resp = num1 + num2;
+        //document.write(resp);
+
+        //Valor real
+
+        var HT, VH, PD, TD, SB, SL;
+
+        HT = parseFloat(prompt("Entre com as horas trabalhadas:"));
+        VH = parseFloat(prompt("Entre com valor da hora:"));
+        PD = parseFloat(prompt("Entre com o percentual de desconto"));
+
+        SB = HT * VH;
+        TD = PD/100 * SB;
+        SL = SB - TD;
+
+        document.write("Salario liquido: R$ ", SL.toFixed(2));
+    </script>
+</body>
+</html>

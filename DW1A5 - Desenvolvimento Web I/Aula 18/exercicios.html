@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Exercicio 1
+        document.write('Exercicio 1<br>');
+
+        var num1 = 10;
+        var num2 = 5;
+
+        var som, sub, mul, div;
+
+        som = num1 + num2;
+        sub = num1 - num2;
+        mul = num1 * num2;
+        div = num1 / num2;
+
+        document.write('A soma entre', num1, ' e ', num2, ' e: ', som + '<br>');
+
+        document.write('A subtracao entre', num1, ' e ', num2, ' e: ', sub + '<br>');
+        document.write('\n');
+        document.write('A multiplicacao entre', num1, ' e ', num2, ' e: ', mul + '<br>');
+        document.write('\n');
+        document.write('A divisao entre', num1, ' e ', num2, ' e: ', div + '<br>')
+
+        //Exercicio 2
+        document.write('Exercicio 2<br>');
+
+
+        var b = prompt("Digite o valor da base: ");
+        var h = prompt("Digite o valor da altura: ");
+
+        parseFloat(b, h);
+
+        document.write('Area: ', a = b * h + '<br>');
+
+
+        //Exercicio 3
+        document.write('Exercicio 3<br>');
+
+
+        var horas =  parseInt(prompt("Digite a quatidade de horas: "));
+        var minutos =  parseInt(prompt("Digite a quantidade de minutos:"));
+        var segundos =  parseInt(prompt("Digite a quantidade de segundos"));
+
+        var soma = segundos + (minutos * 60) + (horas * 60 * 60);
+
+        document.write('Quantiade de segundos: ', soma + '<br>');
+
+        //Exercicio 4
+        document.write('Exercicio 4<br>');
+
+
+        var nota1 = parseFloat(prompt("Digita a nota 1: "));
+        var nota2 = parseFloat(prompt("Digita a nota 2: "));
+        var nota3 = parseFloat(prompt("Digita a nota 3: "));
+        var soma = nota1 + nota2 + nota3;
+        var media = soma/3;
+
+        document.write('Soma: '+ soma + '<br>');
+        document.write('Media: '+ media.toFixed(2));
+
+    </script>
+</body>
+</html>

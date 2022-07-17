@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body">
+    <form action="recebe_dadps.php" method="post" >
+        <p>
+            <!--Input Data-->
+            <label for="entrega">
+            Hora da entrega do produto: <input type="time" name="entrega" id="entrega" min="19:00" max="23:00" step="300">
+            </label>
+        </p>
+        <p>
+            <!--Input Data-->
+            <label for="entrega">
+            Arquivo: <input type="file" name="entrega" id="entrega" min="19:00" max="23:00" step="300">
+            </label>
+        </p>
+        <p>
+            <!--Input hidden-->
+            <label for="imagem">
+            Imagem: <input type="image" src=rick.giff name= "imagem" id="imagem">
+        </p>
+
+        <p>
+            <!--Input hidden-->
+            <label for="escondido">
+            Escondido: <input type="hidden" name="escondido" id="escondido">
+        </p>
+
+        
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="reset">Limpar</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="submit">Mandar</button>
+        </p>
+    </form>
+    <!--Chamar mensagem JS-->
+    <p>
+        <button type="button" onclick="mensagem();"> Chamar função</button>
+    </p>
+    <script>
+        function mensagem(){
+            alert("Ola Mundo");
+        }
+    </script>
+</body>
+</html>

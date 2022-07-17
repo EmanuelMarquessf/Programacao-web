@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var pedido = prompt("Informe um valor")
+
+        var numero = Math.round(Math.random() * 4 + 1);
+
+        if(pedido == numero){
+            document.write("Ok, acertou");
+        }
+
+
+        var resposta = confirm("Selecione um botão")
+
+        if(resposta == true){
+            document.write("Acionou <b>OK</b> ou <b>sim</b>");
+        }else{
+            document.write("Acionou <b>CANCELAR</b> ou <b>NÃO</b>")
+        }
+
+        //Exercicios triangulo
+
+        var A = parseFloat(prompt("Lado A"));
+        var B = parseFloat(prompt("Lado B"));
+        var C = parseFloat(prompt("Lado C"));
+
+        if(A < B+C && B < A+C && C < A+B){
+            //É um triangulo
+            if(A == B && B == C){
+                document.write("Triangulo equilatero");
+            }else{
+                if(A == B || A == C || B == C){
+                    document.write("Triangulo isoceles");
+                }
+                else{
+                    document.write("Triangulo escaleno")
+                }
+            }
+        }
+        else{
+            document.write("Não é um triangulo");
+        }
+
+        //IF encadeado
+
+        var num = parseInt(prompt("Digite o valor"));
+
+        if(NUM == 1){
+            document.write("Voce entrou com o valor 1")
+        }
+        if(NUM == 2){
+            document.write("Voce entrou com o valor 2")
+        }
+        if(NUM < 1){
+            document.write("Voce entrou com um valor muito baixo")
+        }
+        if(NUM > 2){
+            document.write("Voce entrou com um valor alto")
+        }
+
+        //IF ternario
+
+        var nome;
+
+        nome=="teste" ? document.write('Ola ' + nome) : document.write('Informe um nome');
+
+
+        // Switch
+
+        var mes = parseInt(prompt("Mes:"));
+
+        switch
+    </script>
+</body>
+</html>

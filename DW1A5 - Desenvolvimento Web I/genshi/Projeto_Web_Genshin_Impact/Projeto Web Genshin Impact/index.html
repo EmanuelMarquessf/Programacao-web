@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Genshin Impact - Entre nesse vasto mundo mágico de aventura</title>
+</head>
+<body>
+    <div class="home">
+        <header>
+            <img src="./assets/img/logo.png" alt="logo" class="logo">
+            <nav>
+                <ul class="links">
+                    <li><a href="index.html" class="link-nav active">Início</a></li>
+                    <li><a href="" class="link-nav">Personagens</a></li>
+                    <li><a href="" class="link-nav">Times</a></li>
+                    <li><a href="" class="link-nav">Elementos</a></li>
+                    <li><a href="" class="link-nav">Sobre</a></li>
+                </ul>
+            </nav>
+            
+            <a href="https://genshin.hoyoverse.com/pt/home" class="link-original"><button class="btn-oficial">Site Oficial</button></a>
+            
+        </header>
+        <div class="video-home">
+            <video autoplay muted loop preload="auto" poster="https://preview.redd.it/ksubcauxr3s51.png?auto=webp&s=b014562ebffb03ab65ef63711dff51bd94b3133c">
+                <source src="https://genshin.hoyoverse.com/_nuxt/videos/3e78e80.mp4" type="video/mp4">
+            </video>
+            <p class="disponibilidade">Download disponível para múltiplas plataformas, baixe agora.</p>
+        </div>
+    </div>
+    <section class="gallery">
+        <img src="assets/img/img2home.jpg" alt="galeria" class="img2home">
+        <div class="cover">
+            <h2 class="title-gallery">Galeria de Banners</h2>
+            <div class="slideshow-container">
+                <img class="mySlides fade" src="./assets/img/carrosel1.jpg" style="width:100%">
+                <img class="mySlides fade" src="./assets/img/carrosel2.jpg" style="width:100%">
+                <img class="mySlides fade" src="./assets/img/carrosel3.jpeg" style="width:100%">
+                <img class="mySlides fade" src="./assets/img/carrosel4.webp" style="width:100%">
+              </div>
+        </div>
+    </section>
+
+    <section class="cidades">
+        <a href="https://genshin-impact.fandom.com/wiki/Mondstadt" class="cidadeaux" id="cidade1" onmouseover="cityBlur('1')" onmouseleave="clearBlur('1')"><img src="https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200211/2020021114275255981.jpg" alt="" class="city" id="img1"><div class="nome-cidade">Mondstadt</div></a>
+        <a href="https://genshin-impact.fandom.com/wiki/Liyue" class="cidadeaux" id="cidade2" onmouseover="cityBlur('2')" onmouseleave="clearBlur('2')"><img src="https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200526/2020052612372361982.jpg" alt="" class="city" id="img2"><div class="nome-cidade">Porto de Liyue</div></a>
+        <a href="https://genshin-impact.fandom.com/wiki/Inazuma" class="cidadeaux" id="cidade3" onmouseover="cityBlur('3')" onmouseleave="clearBlur('3')"><img src="https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210720/2021072015230536749.jpg" alt="" class="city" id="img3"><div class="nome-cidade">Inazuma</div></a>
+    </section>
+    <footer>
+        <h3>
+            &copy; Todos Direitos Reservados
+        </h3>
+        <div class="icon-container">
+            <a href="https://www.facebook.com/GenshinImpact.pt/"><img src="./assets/img/facebook-free-icon-font.png" alt="" class="icon"></a>
+            <a href="https://twitter.com/BRGenshinImpact"><img src="./assets/img/twitter-free-icon-font.png" alt="" class="icon"></a>
+            <a href="https://www.youtube.com/c/GenshinImpact"><img src="./assets/img/youtube-free-icon-font.png" alt="" class="icon"></a>
+            <a href="https://www.instagram.com/genshinimpact/"><img src="./assets/img/instagram-free-icon-font.png" alt="" class="icon"></a>
+        </div>    
+    </footer>
+    <script src="./assets/js/home.js"></script>
+    <script src="./assets/js/slide.js"></script>
+</body>
+</html>
