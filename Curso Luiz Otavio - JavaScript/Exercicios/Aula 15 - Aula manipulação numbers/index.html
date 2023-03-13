@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="numeroTitulo"></p>
+    <p id="raiz"></p>
+    <p id="seInteiro"></p>
+    <p id="seNan"></p>
+    <p id="arredondaBaixo"></p>
+    <p id="arredondaCima"></p>
+    <p id="duasCasas"></p>
+    <script>
+        const numero = prompt("Digite o numero:");
+        document.getElementById("numeroTitulo").innerHTML = `Numero: ${numero}`;
+        document.getElementById("raiz").innerHTML = `Raiz: ${numero ** 0.5}`;
+        document.getElementById("seInteiro").innerHTML = `${numero} é inteiro? ${numero}`;
+        document.getElementById("seNan").innerHTML = `${numero} é Nan? ${isNaN(numero)}`;
+        document.getElementById("arredondaBaixo").innerHTML = `${numero.f}`
+
+    </script>
+</body>
+
+</html>
