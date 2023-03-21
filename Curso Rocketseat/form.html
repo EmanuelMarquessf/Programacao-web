@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Method get ou post
+        get - pega dados pela URL - Ex: Busca
+        post - passa dados de forma oculta Ex: cadastro de usuário
+    -->
+    <form action="" metrod="">
+        <!-- Fieldset - agrupar varios input dentro de uma categoria-->
+        <fieldset>
+            <!--Legend - Coloca uma legenda no fieldset-->
+            <legend>Contato</legend>
+            <label>
+                Email:
+                <input type="email" autocomplete="email" autofocus required spellcheck="false"> 
+            </label>
+            <label>
+                Nome Completo:
+                <input type="text" placeholder="Digite o seu nome"> 
+            </label>
+            <label>
+                Telefone:
+                <input type="text" placeholder="Digite o seu nome">
+            </label>
+            <label>
+                Senha:
+                <input type="password" 
+                    placeholder="Digite a sua senha" 
+                    minlength="4" maxlength="10" 
+                    pattern="[0-9a-fA-F]{4,10}" 
+                    title="Coloque HEX, minimo 4 caracteres maximo 10 caracteres" 
+                    required 
+                    inputmode="numeric" 
+                    autocomplete="new-password"
+                >
+            </label>
+            <datalist id="fruitData">
+                <option>Banana</option>
+                <option>Maça</option>
+                <option>Uva</option>
+            </datalist>
+            <datalist id="colorData">
+                <option>#ff0000</option>
+                <option>#00ff00</option>
+                <option>#0000ff</option>
+            </datalist>
+            <label>
+                Fruta:
+                <input type="text" list="fruitData">
+            </label>
+            <label>
+                Cor Favorita:
+                <input type="color" list="colorData">
+            </label><label>
+                Arquivo:
+                <input type="file" accept="image/*" enctype=""multipart-data>
+            </label>
+            <label>Receber email
+                <input type="checkbox" value="email">
+            </label>
+            <label>
+                Sim
+                <input type="radio" value="sim">
+            </label>
+            <label>
+                Não
+                <input type="radio" value="não">
+            </label>
+            <label>
+                <select name="estado">
+                        <option value="">Selecione o estado</option>
+                        <option value="sp">São Paulo</option>
+                        <option value="mg">Minas Gerais</option>/option>
+                </select>
+            </label>
+            <label>
+                Numero:
+                <input type="number" list="numberList">
+            </label>
+
+            <datalist id="numberList">
+                <option>100</option>
+                <option>200</option>
+                <option>300</option>
+                <option>400</option>
+                <option>500</option>
+            </datalist>
+
+            <label>
+                Range:
+                <input type="range" min="0" max="100" step="5">
+            </label>
+
+            <label>
+                Data:
+                <input type="date">
+            </label>
+            <label>
+                Data e hora local:
+                <input type="datetime-local">
+            </label>
+            <label>
+                Hora:
+                <input type="time">
+            </label>
+            <label>
+                Mes:
+                <input type="month">
+            </label>
+            <label>
+                Semana:
+                <input type="week">
+            </label>
+
+            <label>
+                Texto:
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </label>
+        </fieldset>
+        <button type="submit" disabled>Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>
