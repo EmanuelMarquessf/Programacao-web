@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Contato</legend>
+            <label>
+                Nome: <input  type="text" placeholder="Digite seu nome">
+            </label>
+            <label>
+                Email: <input  type="email" autocomplete="email"  placeholder="Digite seu Email">
+            </label>
+            <label>
+                Mensagem: <textarea name="" id="" cols="30" rows="10" placeholder="Digite a sua mensagem"></textarea>
+            </label>
+            <input type="reset" value="Limpar">
+            <input type="button" value="Enviar">
+        </fieldset>
+    </form>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            outline: 0;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:  rgb(17, 86, 102);
+        }
+        legend{
+            background-color: white;
+            border-radius: 3px;
+        }
+        fieldset{
+            margin: 50px auto;
+            width: 50%;
+            border-radius: 7px;
+            padding: 10px;
+            background-color: white;
+        }
+        input, textarea{
+            display: block;
+            margin:5px 0px;
+            width: 97%;
+        }
+        input[type="reset"]{
+            width: 49%;
+            display: inline-block;
+        }
+        input[type="button"]{
+            display: inline-block;
+            align-content: center;
+            width: 48%;
+        }
+    </style>
+</body>
+</html>
