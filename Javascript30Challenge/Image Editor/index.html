@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Update CSS Variables with <span>JS</span></h2>
+    <div class="controls">
+        <label>
+            Spacing: 
+            <input type="range" id="spacing" oninput="changePadding()">
+        </label>
+        <label>
+            Blur: 
+            <input type="range" id="blur" min="0" max="25" value="10" oninput="changeBlur()">
+        </label>
+        <label>
+            Base Color: 
+            <input type="color" oninput="changeColor()">
+        </label>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=800" alt="">
+
+    <script>
+
+        const spacingBar = document.querySelector('#spacing')
+        const blurBar = document.querySelector('#blur')
+        const img = document.querySelector('img');
+        const colorInp = document.querySelector("input[type='color']");
+        const titleSpan = document.querySelector('span');
+
+        function changePadding(){
+            img.style.padding = `${spacingBar.value}px`
+        }
+
+        function changeBlur(){
+            img.style.filter = `blur(${blurBar.value}px)`
+        }
+
+        function changeColor(){
+            img.style.background = `${colorInp.value}`;
+            titleSpan.style.color = colorInp.value;
+        }
+
+        changePadding();
+        changeBlur();
+        changeColor();
+    </script>
+</body>
+</html>
