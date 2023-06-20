@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <script>
+      let listaImoveis = [];
+      let opcao = '';
+      
+      
+      do{
+        opcao = prompt(`Imóveis: ${listaImoveis.length}` +
+                  `1 - Salvar Imovel\n2 - Mostrar todos Imóveis\n 3 - Sair`
+                );
+        switch(opcao){
+          case '1':
+            const imovel = {};
+            imovel.proprietario = prompt('Informe o nome do proprietario do imóvel:');
+            imovel.qtdQuartos = prompt('Informe a quantidade de quartos:');
+            imovel.qtdBanheiros = prompt('Informe a quantidade de banheiros:');
+            imovel.garagem = prompt('Possui garagem? S/N');
+
+            const confirma = confirm(
+              `Salvar este imóvel?\n` +
+              `\nProprietário: ${imovel.proprietario}` +
+              `\nQuartos: ${imovel.qtdQuartos}` +
+              `\nBanheiros: ${imovel.qtdBanheiros}` +
+              `\nPossui Garagem? ${imovel.garagem}`
+            );
+            if(confirma){
+              listaImoveis.push(imovel);
+            }
+            break;
+          case '2':
+            for(let i = 0; i <=  listaImoveis.length; i++){
+              alert(`${i+1}°
+                \nProprietário: ${listaImoveis[i].proprietario}
+                \nQuartos: ${listaImoveis[i].qtdQuartos}
+                \nBanheiros: ${listaImoveis[i].qtdBanheiros}
+                \nGaragem: ${listaImoveis[i].garagem}
+                `);
+            }
+            break;
+          case '3':
+            alert('Programa Finalizado!');
+            break;
+          default:
+            alert('Opção Inválida!');
+            break;
+        }
+      }while(opcao !== 3)
+    </script>
+</body>
+</html>

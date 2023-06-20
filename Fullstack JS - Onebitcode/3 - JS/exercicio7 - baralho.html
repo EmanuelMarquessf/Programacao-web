@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Ex 7 - Baralho de Cartas</h1>
+  <script>
+    let baralho = [];
+    let opcao = '';
+
+    do{
+      opcao = prompt(
+        `Cartas no baralho: ${baralho.length}` +
+        `\n1- Adicionar carta\n2-Puxar carta\n3-Sair`);
+      
+      switch(opcao){
+        case '1':
+          novaCarta = prompt(`Digite a carta adicionada no baralho`);
+          baralho.push(novaCarta);
+          break;
+        case '2':
+          if(baralho.length>0){
+            const cartaTirada = baralho.pop();
+            alert(`Carta tirada: ${cartaTirada}`);
+          }
+          else{
+            alert('Baralho Vazio')
+          }
+          break;
+        case '3':
+          alert(`Saindo do programa!`)
+          break;
+        default:
+          alert(`Opção Inválida!!`)
+          break;
+      }
+    }while(opcao !== '3')
+
+  </script>
+</body>
+</html>

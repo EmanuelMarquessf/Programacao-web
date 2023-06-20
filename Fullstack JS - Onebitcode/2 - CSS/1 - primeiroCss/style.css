@@ -1,0 +1,26 @@
+body {
+  background-image: url("https://a-static.besthdwallpaper.com/black-hole-region-of-spacetime-wallpaper-2560x1080-108045_14.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ul{
+  color: greenyellow;
+}
+.moon{
+  color: inherit;
+  font-size: 20px;
+  font-style: oblique;
+}
+
+.big-text{
+  font-size: 40px;
+}
+
+#temisto{
+  color:coral;
+}
+
+h1 {
+  color: rgb(97, 231, 40);
+  border: 2px yellow solid;
+}

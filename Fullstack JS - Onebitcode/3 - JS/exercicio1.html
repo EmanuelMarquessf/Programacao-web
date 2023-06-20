@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    //Ex 1 - Apresentação
+    const name = prompt('Digite seu nome:');
+    const lastname = prompt('Digite seu sobrenome:');
+    const campoEstudo = prompt('Digite seu campo de estudo:');
+    const year = prompt('Digite seu ano de nascimento:');
+    
+    alert(`Seu nome é: ${name} ${lastname}\n Campo de Estudo: ${campoEstudo}\nIdade ${2023 - year}`);
+
+    //Ex 2 - 4 operações com 2 valores
+    const numero1 = prompt('Primeiro valor:');
+    const numero2 = prompt('Segundo valor:');
+
+    alert(`Soma: ${numero1+numero2}\nSubtração: ${numero1 - numero2}\nMultiplicação: ${numero1*numero2}\n Divisão: ${numero1/numero2}`);
+
+    // 3 - Ex 3 - IF e Else - Velocidade de carros
+
+    const car1Name = prompt('Nome do carro:');
+    const car1Spe = prompt(`Valocidado do ${car1Name}:`);
+
+    const car2Name = prompt('Nome do carro:');
+    const car2Spe = prompt(`Valocidado do ${car2Name}:`);
+
+    if(car1Spe > car2Spe){
+      alert(`${car1Name} é mais rapido que ${car2Name}`)
+    }else if(car1Spe < car2Spe){
+      alert(`${car1Name} é mais rapido que ${car2Name}`)
+    } else{
+      alertalert(`${car1Name} tem a mesma velocidade que ${car2Name}`)
+    }
+
+
+  </script>
+</body>
+</html>
