@@ -1,5 +1,5 @@
 {
-  "name": "gituserdata",
+  "name": "vue-project",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -8,11 +8,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.3.2",
-    "vue-router": "^4.2.2"
+    "vue": "^3.3.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
-    "vite": "^4.3.5"
+    "vite": "^4.3.9"
   }
 }
