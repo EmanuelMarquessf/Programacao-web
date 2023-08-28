@@ -2,7 +2,7 @@
 
 </script>
 <template>
-  <span class="text-2xl xl:text-3xl font-bold uppercase text-zinc-900 dark:text-zinc-50">
+  <span class="text-2xl xl:text-3xl font-bold uppercase text-gray-900 dark:text-gray-50">
     logo
   </span>
 </template>
