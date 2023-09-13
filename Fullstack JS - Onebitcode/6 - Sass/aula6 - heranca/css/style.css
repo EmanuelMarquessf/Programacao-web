@@ -1,0 +1,16 @@
+.btn {
+  width: 125px;
+  padding: 10px 0px;
+  border-radius: 20px;
+  display: block;
+  margin-top: 10px;
+}
+.btn.btnAmarelo {
+  background-color: yellow;
+}
+.btn.btnBlue {
+  background-color: blue;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
