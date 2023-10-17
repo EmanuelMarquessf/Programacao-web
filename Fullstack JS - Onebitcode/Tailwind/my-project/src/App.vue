@@ -18,12 +18,12 @@ function updateSelectedEmail(selectedEmail) {
 </script>
 
 <template>
-  <Header></Header>
+  <Header />
   <Container>
     <div class="flex flex-col md:flex-row gap-2 xl:gap-4 h-full relative">
-      <Sidebar></Sidebar>
+      <Sidebar />
       <EmailList @selectEmail="updateSelectedEmail" />
-      <EmailContent>
+      <EmailContent />
         <div 
         class=" p-2 md:p-4 absolute lg:relative h-full w-full 
         bg-gray-50 dark:bg-gray-700
@@ -41,8 +41,7 @@ function updateSelectedEmail(selectedEmail) {
           <FiX className="inline sm:mr-1 mb-[1px]" />
           <span className="hidden sm:inline">Fechar</span>
         </button>
-      </EmailContent>
-      <Bottombar></Bottombar>
+      <Bottombar />
     </div>
   </Container>
 </template>
