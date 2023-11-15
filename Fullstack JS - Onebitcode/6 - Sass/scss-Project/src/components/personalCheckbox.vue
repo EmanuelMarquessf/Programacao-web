@@ -8,15 +8,15 @@
 
 <template>
   <label for="">
-    <input type="checkbox"> 
+    <input class="check" type="checkbox"> 
     <span><slot></slot></span>
   </label>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 $primaryColor : #141124;
 $secondaryColor: #2b2845;
-$terciaryColor: #19afd0;
+$tertiaryColor: #19afd0;
 
 $textPrimary: #ebf0fd;
 $textSecondary: #8186a3;
@@ -24,8 +24,19 @@ $textSecondary: #8186a3;
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
-  }
-  a{
-    color: $terciaryColor;
+    .check{
+      max-width: 15px;
+      min-width: 15px;
+      width: 15px;
+    }
+    span{
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      text-align: justify;
+    }
+    .linkCheck{
+      color: $tertiaryColor;
+    }
   }
 </style>

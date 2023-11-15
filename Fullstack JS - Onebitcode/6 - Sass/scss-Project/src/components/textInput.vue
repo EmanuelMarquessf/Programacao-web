@@ -17,7 +17,7 @@
 <style lang="scss" scoped>
 $primaryColor : #141124;
 $secondaryColor: #2b2845;
-$terciaryColor: #19afd0;
+$tertiaryColor: #19afd0;
 
 $textPrimary: #ebf0fd;
 $textSecondary: #8186a3;
@@ -25,7 +25,7 @@ $textSecondary: #8186a3;
     display: flex;
     flex-direction: column;
     font-size: 20px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Roboto', sans-serif;
     gap:0.5rem;
     input{
       background-color: $secondaryColor;
