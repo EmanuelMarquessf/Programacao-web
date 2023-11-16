@@ -14,12 +14,6 @@
 </template>
 
 <style lang="scss" scoped>
-$primaryColor : #141124;
-$secondaryColor: #2b2845;
-$tertiaryColor: #19afd0;
-
-$textPrimary: #ebf0fd;
-$textSecondary: #8186a3;
   label{
     display: flex;
     flex-direction: row;
@@ -30,10 +24,8 @@ $textSecondary: #8186a3;
       width: 15px;
     }
     span{
-      font-family: 'Roboto', sans-serif;
-      font-weight: 400;
-      font-size: 14px;
       text-align: justify;
+      @include text-style($textPrimary, 14px,'Roboto', 400, normal)
     }
     .linkCheck{
       color: $tertiaryColor;

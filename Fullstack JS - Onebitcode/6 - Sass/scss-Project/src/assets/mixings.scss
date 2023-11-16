@@ -1,0 +1,12 @@
+@mixin text-style($color, $size, $family, $weight, $textTransform){
+  color: $color;
+  font-size: $size;
+  font-family: $family;
+  font-weight: $weight;
+  text-transform: $textTransform;
+}
+
+@mixin link-style($color, $decoration){
+  color: $color;
+  text-decoration: $decoration;
+}

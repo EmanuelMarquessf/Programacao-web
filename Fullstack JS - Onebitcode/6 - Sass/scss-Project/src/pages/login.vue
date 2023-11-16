@@ -50,39 +50,32 @@
       box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
       color: $textPrimary;
       display: flex;
+      font-family: 'Roboto', sans-serif;
       flex-direction: column;
       justify-content: space-between;
       padding: 4rem 3rem;
       width: 30%;
-      
       .checkbox{
         display: flex;
         flex-direction: column;
         gap:1rem;
       }
       .title{
-        font-size: 25px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
-        text-transform: uppercase;
+        @include text-style($textPrimary, 25px,'Roboto', 500, uppercase);
         margin-bottom: 1rem;
       }
       .registerTitle{
-        color: $textPrimary;
-        text-decoration: none;
+        @include link-style($textPrimary, none);
       }
       .loginTitle{
-        color: $textSecondary;
-        text-decoration: none;
+        @include link-style($textSecondary, none);
       }
       .spanSocial{
-        font-family: 'Roboto', sans-serif;
         font-size: 18px;
         text-align: center;
       }
       .spanLogin{
         text-align: center;
-        font-family: 'Roboto', sans-serif;
         font-size: 14px;
       }
     }

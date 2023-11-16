@@ -8,12 +8,6 @@
 </template>
 
 <style lang="scss" scoped>
-$primaryColor : #141124;
-$secondaryColor: #2b2845;
-$tertiaryColor: #19afd0;
-
-$textPrimary: #ebf0fd;
-$textSecondary: #8186a3;
 div{
   display: flex;
   flex-direction: row;

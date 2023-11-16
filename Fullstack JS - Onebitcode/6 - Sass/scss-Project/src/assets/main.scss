@@ -1,10 +1,5 @@
-@import './base.scss';
-
-$primaryColor : #141124;
-$secondaryColor: #2b2845;
-$tertiaryColor: #19afd0;
-$textPrimary: #ebf0fd;
-$textSecondary: #8186a3;
+@import "./colors.scss";
+@import "./mixings.scss";
 
 *{
   padding: 0;
@@ -15,3 +10,5 @@ $textSecondary: #8186a3;
 body{
   background-color: $secondaryColor;
 }
+
+

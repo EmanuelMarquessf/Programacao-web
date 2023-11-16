@@ -1,9 +1,5 @@
 <script setup>
   import Login from "../src/pages/login.vue";
-  import TextInput from "../src/components/textInput.vue";
-  import PersonalCheckbox from "../src/components//personalCheckbox.vue";
-  import MainButton from "../src/components/mainButton.vue";
-  import SocialNetworkIcons from "../src/components/socialNetworkIcons.vue";
 </script>
 
 <template>

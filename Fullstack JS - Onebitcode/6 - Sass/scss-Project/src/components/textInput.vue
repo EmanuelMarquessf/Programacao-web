@@ -15,12 +15,6 @@
 </template>
 
 <style lang="scss" scoped>
-$primaryColor : #141124;
-$secondaryColor: #2b2845;
-$tertiaryColor: #19afd0;
-
-$textPrimary: #ebf0fd;
-$textSecondary: #8186a3;
   label{
     display: flex;
     flex-direction: column;
@@ -29,12 +23,10 @@ $textSecondary: #8186a3;
     gap:0.5rem;
     input{
       background-color: $secondaryColor;
-      color: $textPrimary;
-      font-size: 15px;
-      font-family:Arial, Helvetica, sans-serif;
       padding: 1rem 0.5rem;
       border: 0px;
       border-radius: 1px;
+      @include text-style($textPrimary, 15px,'Roboto', 500, normal)
     }
   }
 </style>
