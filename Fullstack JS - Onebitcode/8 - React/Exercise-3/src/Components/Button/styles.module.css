@@ -1,0 +1,13 @@
+.link {
+  background-image: linear-gradient(to left,#6dc4e3,#2679c1);
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  color: white;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 50px;
+  text-decoration: none;
+  width: 150px;
+}

@@ -1,0 +1,17 @@
+*{
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #428cd1;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100vh;
+}
